@@ -60,7 +60,7 @@
 
                                     <div class="col-lg-12">
                                         <h4>Update Status</h4>
-                                        {!! QrCode::size(100)->generate("https://www.google.com/maps/dir/".urlencode($user->address)."/@".$user->lat.",".$user->lng.",17.25z"); !!}
+                                        {!! QrCode::size(450)->generate("https://www.google.com/maps/dir/".urlencode($user->address)."/@".$user->lat.",".$user->lng.",17.25z"); !!}
                                     </div>
                                     <form class="col-lg-12" method="POST" action="{{route("admin.users.update")}}">
                                         @csrf
